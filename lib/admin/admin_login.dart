@@ -39,83 +39,86 @@ class _AdminLoginState extends State<AdminLogin> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(top: 40, left: 20, right: 20, bottom: 5),
-              margin:
-                  EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(40),
-                      topRight: Radius.circular(40))),
-              child: Form(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Username",
-                      style: TextStyle(
-                          color: Color(0xffb91635),
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    TextFormField(
-                      controller: usernameController,
-                      decoration: InputDecoration(
-                          hintText: "Username",
-                          prefixIcon: Icon(Icons.mail_outline)),
-                    ),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    Text(
-                      "Password",
-                      style: TextStyle(
-                          color: Color(0xffb91635),
-                          fontSize: 25,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    TextFormField(
-                      controller: userpasswordController,
-                      decoration: InputDecoration(
-                        hintText: "Enter password",
-                        prefixIcon: Icon(Icons.password_outlined),
+            SingleChildScrollView(
+              child: Container(
+                padding:
+                    EdgeInsets.only(top: 40, left: 20, right: 20, bottom: 5),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height / 4),
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(40),
+                        topRight: Radius.circular(40))),
+                child: Form(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Username",
+                        style: TextStyle(
+                            color: Color(0xffb91635),
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500),
                       ),
-                      obscureText: true,
-                    ),
-                    SizedBox(
-                      height: 60,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        loginAdmin();
-                      },
-                      child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 10),
-                        width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                Color(0xffb91635),
-                                Color(0xff621d3c),
-                                Color(0xff311937),
-                              ],
+                      TextFormField(
+                        controller: usernameController,
+                        decoration: InputDecoration(
+                            hintText: "Username",
+                            prefixIcon: Icon(Icons.mail_outline)),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Text(
+                        "Password",
+                        style: TextStyle(
+                            color: Color(0xffb91635),
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      TextFormField(
+                        controller: userpasswordController,
+                        decoration: InputDecoration(
+                          hintText: "Enter password",
+                          prefixIcon: Icon(Icons.password_outlined),
+                        ),
+                        obscureText: true,
+                      ),
+                      SizedBox(
+                        height: 60,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          loginAdmin();
+                        },
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 10),
+                          width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [
+                                  Color(0xffb91635),
+                                  Color(0xff621d3c),
+                                  Color(0xff311937),
+                                ],
+                              ),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Center(
+                            child: Text(
+                              "Log In",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold),
                             ),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: Center(
-                          child: Text(
-                            "Log In",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             )

@@ -4,6 +4,7 @@ import 'package:barber_app/firebase_options.dart';
 import 'package:barber_app/pages/forget_password.dart';
 import 'package:barber_app/pages/home.dart';
 import 'package:barber_app/pages/onboarding.dart';
+import 'package:barber_app/pages/role.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Onboarding());
+        home: RolePage());
   }
 }
 
