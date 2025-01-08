@@ -1,6 +1,6 @@
-# BarberBooker
+# BarberQueue
 
-**BarberBooker** is a Barber's Reservation App that enables users to easily book appointments with their preferred barber at a barbershop. This app allows customers to schedule haircuts and other services. It’s built using **Flutter** for the frontend and **Firebase** as the backend to handle authentication, database management, and notifications. The app also uses **SharedPreferences** for storing user preferences locally.
+**BarberQueue** is a Barber's Reservation App that enables users to easily book appointments with their preferred barber at a barbershop. This app allows customers to schedule haircuts and other services. It’s built using **Flutter** for the frontend and **Firebase** as the backend to handle authentication, database management, and notifications. The app also uses **SharedPreferences** for storing user preferences locally.
 
 ## Features
 
